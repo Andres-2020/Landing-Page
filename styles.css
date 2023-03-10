@@ -1,0 +1,265 @@
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: solid red 1px; */
+}
+
+header, main, footer {
+    width: 75%;
+}
+
+.active {
+    display: none;
+}
+
+/* Flexbox */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'DosisRegular';
+    src: url('fonts/Dosis-Regular.woff2') format('woff2'),
+         url('fonts/Dosis-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DosisSemiBold';
+    src: url('fonts/Dosis-SemiBold.woff2') format('woff2'),
+         url('fonts/Dosis-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'DosisRegular', sans-serif;
+    font-size: 26px;
+}
+
+nav, h1, h2 {
+    font-family: 'DosisSemiBold', sans-serif;
+}
+
+.AF {
+    font-size: 58px;
+}
+
+h1, h2 {
+    font-size: 32px;
+}
+
+.title {
+    font-size: 38px;
+}
+
+footer > a > p {
+    font-size: 16px;
+}
+
+/* Colors */
+
+* {
+    color: black;
+    text-decoration-color: transparent;
+    background-color: #DCE2F0;
+}
+
+.color {
+    /* background-color: #50586C; */
+    color: #50586C;
+}
+
+.AF {
+    color: #50586C;
+}
+
+/* Header and footer */
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    gap: 40px;
+}
+
+footer {
+    padding: 10px;
+    border-top: 1px;
+    border-top-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+
+/* Main content */
+
+#home {
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.home-section {
+    align-items: flex-start;
+}
+
+#about {
+    height: 100vh;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.about-section {
+    padding: 20px;
+    border: 3px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: black;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.about-description, .about-languages {
+    height: 100%;
+    width: 45%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hobbies {
+    gap: 50px;
+}
+
+.hobbies > * {
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-grid {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.grid-1, .grid-2, .grid-3 {
+    gap: 20px;
+}
+
+#projects {
+    height: 100vh;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.projects-section {
+    width: 100%;
+    padding: 20px;
+    border: 3px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: black;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.projects-sites {
+    width: 100%;
+}
+
+.projects-text-img {
+    height: 100%;
+    width: 50%;
+    gap: 10px;
+}
+
+#contact {
+    height: 100vh;
+}
+
+#contact, .contact-section {
+    gap: 40px;
+}
+
+/* Input and media */
+
+button {
+    height: 40px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+img {
+    height: 30px;
+    width: auto;
+}
+
+#language, #light-switch {
+    cursor: pointer;
+}
+
+#home > img {
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+}
+
+.about-img {
+    height: 75px;
+    width: auto;
+}
+
+.projects-img {
+    height: 250px;
+    width: auto;
+}
+
+/* Transitions */
+
+nav > *, menu, .projects-img, button {
+    transition: 0.3s ease;
+}
+
+.menu:hover {
+    text-decoration-color: #234e70;
+    transform: translateY(-0.1cm);
+}
+
+nav > *:hover, .projects-img:hover, button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* Animations */
+
+/* Media queries */
+
+/* @media all and (max-width:) {
+} */
