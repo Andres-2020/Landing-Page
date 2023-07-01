@@ -121,6 +121,7 @@ footer > a > p {
     border-bottom-style: solid;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .header, footer {
@@ -266,6 +267,7 @@ img, #home > img, .about-img, .projects-img {
 
 .projects-img {
     height: 250px;
+    width: 440px;
 }
 
 /* Transitions */
@@ -299,6 +301,7 @@ button:hover {
 @media all and (max-width:1331px) {
     .projects-img {
         height: 225px;
+        width: 400px;
     }
 }
 
@@ -311,6 +314,7 @@ button:hover {
 @media all and (max-width:1216px) {
     .projects-img {
         height: 200px;
+        width: 355px;
     }
 }
 
@@ -367,6 +371,7 @@ button:hover {
 @media all and (max-width:1086px) {
     .projects-img {
         height: 150px;
+        width: 265px;
     }
 }
 
