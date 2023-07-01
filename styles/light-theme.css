@@ -163,6 +163,10 @@ footer {
     align-items: flex-end;
 }
 
+#about, #projects {
+    margin-bottom: 5%;
+}
+
 #about, #projects, #contact, .contact-section {
     gap: 40px;
 }
@@ -376,6 +380,10 @@ button:hover {
 }
 
 @media all and (max-width:991px) {
+    #about {
+        margin-bottom: 20%;
+    }
+    
     .about-section, .about-languages {
         gap: 20px;
     }
@@ -457,6 +465,10 @@ button:hover {
         text-align: center;
     }
 
+    #about, #projects {
+        margin-bottom: 20%;
+    }
+
     .about-description > p, .about-languages > p {
         text-align: justify;
     }
@@ -482,9 +494,21 @@ button:hover {
     }
 }
 
+@media all and (max-width:661px) {
+    #about {
+        margin-bottom: 30%;
+    }
+}
+
 @media all and (max-width:516px) {
     header, main, footer {
         padding-right: 1.5%;
+    }
+}
+
+@media all and (max-width:481px) {
+    #about {
+        margin-bottom: 40%;
     }
 }
 
@@ -499,6 +523,10 @@ button:hover {
 
     .header {
         width: 90%;
+    }
+
+    #about, #projects {
+        margin-bottom: 40%;
     }
 
     .hobbies {
@@ -536,6 +564,10 @@ button:hover {
 }
 
 @media all and (max-width:376px) {
+    #about, #projects {
+        margin-bottom: 60%;
+    }
+    
     .about-text-img > p {
         font-size: 10px;
     }
